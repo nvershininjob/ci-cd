@@ -13,11 +13,11 @@ jobs:
 
     steps:
     # 3. Step one: download the repository code to the runner
-    - name: Check out repository code
+    - name: figlet Check out repository code
       uses: actions/checkout@v4
 
     # 4. Step two: build a test Docker image
-    - name: Build Docker Image
+    - name: figlet Build Docker Image
       run: |
         docker build -t my-app:${{ github.sha }} .
         docker images
